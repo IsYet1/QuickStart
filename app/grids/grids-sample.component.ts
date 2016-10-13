@@ -5,8 +5,6 @@ import { Component, OnInit } from '@angular/core';
     selector: 'oxy-grid',
     templateUrl: 'app/grids/grids-sample.component.html'
 })
-export class GridsSampleComponent implements OnInit {
-    constructor() { }
+export class GridsSampleComponent {
 
-    ngOnInit() { }
 }
