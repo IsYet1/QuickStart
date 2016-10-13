@@ -13,3 +13,11 @@
 .placeholder {
     position: absolute;
 }
+
+div.grid {
+    border: 1px red solid;
+}
+
+div.grid-item {
+    border: 1px blue solid;    
+}
