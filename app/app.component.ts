@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
-import  { GridsSampleComponent } from './grids/grids-sample.component';
+import {NgGrid, NgGridItem} from 'angular2-grid';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular App And I made a change</h1><h2>And it is auto-updating</h2><h2>This has the Grid</h2>'
+    templateUrl: 'app/app.component.html',
+    styleUrls: ['app/grids/grids.css']
 })
 export class AppComponent { }

@@ -27,6 +27,9 @@
       // other libraries
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
+
+      // Grid
+      'angular2-grid': 'node_modules/angular2-grid/dist'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -40,6 +43,9 @@
       'angular-in-memory-web-api': {
         main: './index.js',
         defaultExtension: 'js'
+      },
+      'angular2-grid': { 
+        main: 'main.js',  defaultExtension: 'js' 
       }
     }
   });
