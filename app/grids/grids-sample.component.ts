@@ -11,15 +11,15 @@ export class GridsSampleComponent {
     gridSettings = {
         margins: [5, 10]
         ,draggable: true
-        ,resizeable: false 
-        ,max_cols: 0
+        ,resizeable: true 
+        ,max_cols: 4
         ,max_rows: 0
         ,visible_cols: 0
-        ,vilible_rows: 0
+        ,vilible_rows: 2
         ,min_cols: 0
         ,min_rows: 0
-        ,col_width: 250
-        ,row_height: 250
+        ,col_width: 200
+        ,row_height: 200
         ,cascade: 'left'
         ,min_width: 100
         ,min_height: 100
