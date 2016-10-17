@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['grids.css']    
 })
 export class GridsSampleComponent {
-    title="Grid Dashboard Sample 0930";
+    title="Grid:";
     gridSettings = {
         margins: [5, 10]
         ,draggable: true
-        ,resizeable: true 
+        ,resizeable: false 
         ,max_cols: 4
-        ,max_rows: 0
+        ,max_rows: 2
         ,visible_cols: 0
         ,vilible_rows: 2
         ,min_cols: 0
@@ -39,6 +39,7 @@ export class GridsSampleComponent {
             , options: {
                 col: 3
                 ,row: 2
+                ,resizeable: false
             }
         }
         ,{
