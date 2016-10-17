@@ -34,12 +34,37 @@ export class GridsSampleComponent {
     gridItems: any[]=
     [
         {
-        title: 'Grid item 1'
-        , body: 'Grid body goes here'
+            title: 'Grid item 1'
+            , body: 'Grid body goes here'
+            , options: {
+                col: 3
+                ,row: 2
+            }
         }
         ,{
-        title: 'Grid item 2'
-        , body: 'Grid body goes here'
+            title: 'Grid item 2'
+            , body: 'Grid body goes here'
+            , options: {col: 3, row: 2}
+        }
+        ,{
+            title: 'Grid item 3'
+            , body: 'Grid body goes here'
+            , options: {col: 3, row: 1}
+        }
+        ,{
+            title: 'Grid item 4'
+            , body: 'Grid body goes here'
+            , options: {}
+        }
+        ,{
+            title: 'Grid item 5'
+            , body: 'Grid body goes here'
+            , options: {}
+        }
+        ,{
+            title: 'Grid item 6'
+            , body: 'Grid body goes here'
+            , options: {}
         }
     ]
 }

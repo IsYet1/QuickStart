@@ -1,22 +1,6 @@
 <h1>{{title}}</h1>
 <div [ngGrid]='gridSettings'>
-    <div [ngGridItem]>
-        <div class="title">"box.title in the component"</div>
-        <p>"box text"</p>
-    </div>
-    <div [ngGridItem]>
-        <div class="title">"box.title"</div>
-        <p>"box2 text"</p>
-    </div>
-    <div [ngGridItem]>
-        <div class="title">"box.title"</div>
-        <p>"box2 text"</p>
-    </div>
-    <div [ngGridItem]>
-        <div class="title">"box.title"</div>
-        <p>"box2 text"</p>
-    </div>
-    <div [ngGridItem] *ngFor="let item of gridItems">
+    <div *ngFor="let item of gridItems" [ngGridItem]='item.options'>
         <div class="title">{{item.title}}</div>
         <p>{{item.body}}</p>
     </div>
