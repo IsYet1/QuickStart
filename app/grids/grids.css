@@ -15,9 +15,18 @@
 }
 
 div.grid {
-    border: 1px red solid;
+    border: 1px solid lightblue;
 }
 
 div.grid-item {
-    border: 1px blue solid;    
+    border: 1px solid lightgrey;  
+}
+
+.grid-item div{
+    border-bottom: 1px solid darkgray;
+    background-color: lightskyblue;  
+}
+
+.grid-item p{
+    background-color: lightgoldenrodyellow;
 }
