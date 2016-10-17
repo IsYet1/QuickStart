@@ -22,7 +22,7 @@ div.grid-item {
     border: 1px solid lightgrey;  
 }
 
-.grid-item div{
+.grid-item .title{
     border-bottom: 1px solid darkgray;
     background-color: lightskyblue;  
 }
