@@ -16,4 +16,8 @@
         <div class="title">"box.title"</div>
         <p>"box2 text"</p>
     </div>
+    <div [ngGridItem] *ngFor="let item of gridItems">
+        <div class="title">{{item.title}}</div>
+        <p>{{item.body}}</p>
+    </div>
 </div>

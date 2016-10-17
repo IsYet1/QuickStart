@@ -30,4 +30,16 @@ export class GridsSampleComponent {
         ,prefer_new: false
         ,limit_to_screen: false
     };
+
+    gridItems: any[]=
+    [
+        {
+        title: 'Grid item 1'
+        , body: 'Grid body goes here'
+        }
+        ,{
+        title: 'Grid item 2'
+        , body: 'Grid body goes here'
+        }
+    ]
 }
