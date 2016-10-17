@@ -7,5 +7,5 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['grids.css']    
 })
 export class GridsSampleComponent {
-    
+    title="Grid Dashboard Sample 0930";
 }
