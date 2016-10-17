@@ -1,19 +1,19 @@
 <h1>{{title}}</h1>
-<div [ngGrid]="{'resizeable': false, 'margins': [5, 10]}">
+<div [ngGrid]='gridSettings'>
     <div [ngGridItem]>
         <div class="title">"box.title in the component"</div>
         <p>"box text"</p>
     </div>
     <div [ngGridItem]>
-        <div class="title2">"box.title"</div>
+        <div class="title">"box.title"</div>
         <p>"box2 text"</p>
     </div>
     <div [ngGridItem]>
-        <div class="title2">"box.title"</div>
+        <div class="title">"box.title"</div>
         <p>"box2 text"</p>
     </div>
     <div [ngGridItem]>
-        <div class="title2">"box.title"</div>
+        <div class="title">"box.title"</div>
         <p>"box2 text"</p>
     </div>
 </div>
