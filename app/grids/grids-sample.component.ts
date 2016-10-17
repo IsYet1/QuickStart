@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridsSampleComponent {
     title="Grid:";
+    colorNonResizable = 'lightgray';
     gridSettings = {
         margins: [5, 10]
         ,draggable: true
@@ -36,6 +37,7 @@ export class GridsSampleComponent {
         {
             title: 'Grid item 1'
             , body: 'Grid body goes here'
+            , titleColor: 'green'
             , options: {
                 col: 3
                 ,row: 2
@@ -57,7 +59,9 @@ export class GridsSampleComponent {
         ,{
             title: 'Grid item 4'
             , body: 'Grid body goes here'
-            , options: {}
+            , options: {
+                    resizable: false
+            }
         }
         ,{
             title: 'Grid item 5'

@@ -1,7 +1,10 @@
 <h1>{{title}}</h1>
 <div [ngGrid]='gridSettings'>
     <div *ngFor="let item of gridItems" [ngGridItem]='item.options'>
-        <div class="title">{{item.title}}</div>
+        <div class="title" [style.background-color]='!item.options.resizable ? colorNonResizable: ""'>
+            {{item.title}}<br>
+            {{item.options.resizable}}
+        </div>
         <p>{{item.body}}</p>
     </div>
 </div>
