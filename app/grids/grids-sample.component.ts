@@ -11,7 +11,7 @@ export class GridsSampleComponent {
     gridSettings = {
         margins: [5, 10]
         ,draggable: true
-        ,resizeable: false 
+        ,resizable: true 
         ,max_cols: 4
         ,max_rows: 2
         ,visible_cols: 0
@@ -39,13 +39,15 @@ export class GridsSampleComponent {
             , options: {
                 col: 3
                 ,row: 2
-                ,resizeable: false
             }
         }
         ,{
             title: 'Grid item 2'
             , body: 'Grid body goes here'
-            , options: {col: 3, row: 2}
+            , options: {col: 3
+                , row: 2
+                , resizable: false
+            }
         }
         ,{
             title: 'Grid item 3'
