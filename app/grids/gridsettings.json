@@ -19,7 +19,7 @@
     ,"vilible_rows": 2
     ,"min_width": 100
 
-    ,"fix_to_grid": true
+    ,"fix_to_grid": false
     ,"auto_style": true
     ,"auto_resize": false
     ,"maintain_ratio": false

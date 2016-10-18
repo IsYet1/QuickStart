@@ -6,7 +6,8 @@
             "minCols": 0,
             "resizable": true,
             "row": 1,
-            "col": 1
+            "col": 1,
+            "fixed": false
         }
     }
     ,{
