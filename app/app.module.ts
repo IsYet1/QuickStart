@@ -6,9 +6,12 @@ import { NgGridModule } from 'angular2-grid';
 import { AppComponent }  from './app.component';
 import {GridsSampleComponent} from './grids/grids-sample.component';
 
+import { HttpModule } from '@angular/http';
+
+import 'rxjs/Rx';
 
 @NgModule({
-  imports: [ BrowserModule, NgGridModule ],
+  imports: [ BrowserModule, NgGridModule, HttpModule ],
   declarations: [ AppComponent, GridsSampleComponent ],
   bootstrap: [ AppComponent ]
 })

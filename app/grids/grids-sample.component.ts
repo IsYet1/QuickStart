@@ -1,14 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { GridService } from './grid.service';
 
 @Component({
     moduleId: module.id,
     selector: 'oxy-grid',
     templateUrl: 'grids-sample.component.html',
-    styleUrls: ['grids.css']    
+    styleUrls: ['grids.css'],
+    providers: [GridService]  
 })
 export class GridsSampleComponent {
     title="Grid:";
     colorNonResizable = 'lightgray';
+
+    /**
+     *
+     */
+    constructor(private _gridService: GridService) {    }
+
     gridSettings = {
         margins: [5, 10]
         ,draggable: true
