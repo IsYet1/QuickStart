@@ -3,36 +3,52 @@
         "title": "Grid item 1"
         , "body": "Grid body goes here from json"
         , "options": {
+            "minCols": 0,
+            "resizable": true,
+            "row": 1,
+            "col": 1
         }
     }
     ,{
         "title": "Grid item 2"
         , "body": "Grid body goes here"
         , "options": {
-            "resizable": false
+            "resizable": false,
+            "row": 1,
+            "col": 3
         }
     }
     ,{
         "title": "Grid item 3"
         , "body": "Grid body goes here"
         , "options": {
+            "row": 1,
+            "col": 5
             }
     }
     ,{
         "title": "Grid item 4"
         , "body": "Grid body goes here"
         , "options": {
-                "resizable": false
+                "resizable": false,
+                "row": 1,
+                "col": 7
         }
     }
     ,{
         "title": "Grid item 5"
         , "body": "Grid body goes here"
-        , "options": {}
+        , "options": {
+            "row": 1,
+            "col": 9
+        }
     }
     ,{
         "title": "Grid item 6"
         , "body": "Grid body goes here"
-        , "options": {}
+        , "options": {
+            "row": 2,
+            "col": 1
+        }
     }
 ]

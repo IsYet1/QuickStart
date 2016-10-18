@@ -3,9 +3,9 @@
     <div *ngFor="let item of gridItems | async" [ngGridItem]='item.options'>
         <div class="title" [style.background-color]='!item.options.resizable ? colorNonResizable: ""'>
             {{item.title}}<br>
-            {{item.options.resizable}}
-            <label>Resizable?</label>
-            <input type="checkbox" value="1" ng-checked="" />
+            <!--{{item.options.resizable}}-->
+            <!--<label>Resizable?</label>
+            <input type="checkbox" value="1" ng-checked="" />-->
         </div>
         <p>{{item.body}}</p>
     </div>

@@ -2,18 +2,24 @@
     "margins": [5, 10]
     ,"draggable": true
     ,"resizable": true 
-    ,"max_cols": 12
-    ,"max_rows": 2
-    ,"visible_cols": 0
-    ,"vilible_rows": 2
-    ,"min_cols": 0
-    ,"min_rows": 0
+
+    ,"cascade": "up"
+
     ,"col_width": 50
-    ,"row_height": 120
-    ,"cascade": "left"
-    ,"min_width": 100
+    ,"max_cols": 12
+
+    ,"min_cols": 0
+    ,"visible_cols": 12
     ,"min_height": 100
-    ,"fix_to_grid": false
+
+    ,"row_height": 120
+    ,"min_rows": 0
+
+    ,"max_rows": 2
+    ,"vilible_rows": 2
+    ,"min_width": 100
+
+    ,"fix_to_grid": true
     ,"auto_style": true
     ,"auto_resize": false
     ,"maintain_ratio": false
