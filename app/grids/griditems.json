@@ -2,24 +2,21 @@
     {
         "title": "Grid item 1"
         , "body": "Grid body goes here from json"
-        , "titleColor": "green"
         , "options": {
-            "col": 3
-            ,"row": 2
         }
     }
     ,{
         "title": "Grid item 2"
         , "body": "Grid body goes here"
-        , "options": {"col": 3
-            , "row": 2
-            , "resizable": false
+        , "options": {
+            "resizable": false
         }
     }
     ,{
         "title": "Grid item 3"
         , "body": "Grid body goes here"
-        , "options": {"col": 3, "row": 1}
+        , "options": {
+            }
     }
     ,{
         "title": "Grid item 4"
