@@ -4,6 +4,8 @@
         <div class="title" [style.background-color]='!item.options.resizable ? colorNonResizable: ""'>
             {{item.title}}<br>
             {{item.options.resizable}}
+            <label>Resizable?</label>
+            <input type="checkbox" value="1" ng-checked="" />
         </div>
         <p>{{item.body}}</p>
     </div>
