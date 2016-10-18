@@ -1,7 +1,7 @@
 [
     {
         "title": "Grid item 1"
-        , "body": "Grid body goes here"
+        , "body": "Grid body goes here from json"
         , "titleColor": "green"
         , "options": {
             "col": 3

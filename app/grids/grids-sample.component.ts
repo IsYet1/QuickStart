@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { GridService } from './grid.service';
 
+import { Observable } from 'rxjs/Rx';
+
 @Component({
     moduleId: module.id,
     selector: 'oxy-grid',
@@ -11,11 +13,16 @@ import { GridService } from './grid.service';
 export class GridsSampleComponent {
     title="Grid:";
     colorNonResizable = 'lightgray';
-
+    gridItems: Observable<any>;
     /**
      *
      */
     constructor(private _gridService: GridService) {    }
+
+    ngOnInit(): void {
+    console.log("In OnInit");
+    this.gridItems = this._gridService.getGrids();
+}
 
     gridSettings = {
         margins: [5, 10]
@@ -39,47 +46,4 @@ export class GridsSampleComponent {
         ,prefer_new: false
         ,limit_to_screen: false
     };
-
-    gridItems: any[]=
-    [
-        {
-            title: 'Grid item 1'
-            , body: 'Grid body goes here'
-            , titleColor: 'green'
-            , options: {
-                col: 3
-                ,row: 2
-            }
-        }
-        ,{
-            title: 'Grid item 2'
-            , body: 'Grid body goes here'
-            , options: {col: 3
-                , row: 2
-                , resizable: false
-            }
-        }
-        ,{
-            title: 'Grid item 3'
-            , body: 'Grid body goes here'
-            , options: {col: 3, row: 1}
-        }
-        ,{
-            title: 'Grid item 4'
-            , body: 'Grid body goes here'
-            , options: {
-                    resizable: false
-            }
-        }
-        ,{
-            title: 'Grid item 5'
-            , body: 'Grid body goes here'
-            , options: {}
-        }
-        ,{
-            title: 'Grid item 6'
-            , body: 'Grid body goes here'
-            , options: {}
-        }
-    ]
 }
