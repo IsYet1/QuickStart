@@ -13,7 +13,13 @@ export class GridService {
 
     getGridItems(){
         return this._http.get(URL_GRIDITEMS)
-        .map((response: Response) => response.json());
+        .map((response: Response) => response.json())
+        .toPromise()
+        .catch((err: any) => {
+            console.log(err); //More processing here
+            return Promise.reject(err);
+        })
+        ;
     }
 
     getGridItemSettings(){
@@ -23,14 +29,8 @@ export class GridService {
         .toPromise()
         .catch((err: any) => {
             console.log(err); //More processing here
-            Promise.reject(err);
+            return Promise.reject(err);
         })
         ;
-    }
-
-    _handleError(err: any){
-        //Note that err will catch a 404 because the json will be empty.
-        console.log(err);
-        return Observable.throw(err);
     }
 }
