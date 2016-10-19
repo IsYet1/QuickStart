@@ -20,7 +20,11 @@ export class GridService {
         console.log("In GetGridSettings")
         return this._http.get(URL_GRIDITEMSETTINGS)
         .map((response: Response) => response.json())
-        .catch(this._handleError)
+        .toPromise()
+        .catch((err: any) => {
+            console.log(err); //More processing here
+            Promise.reject(err);
+        })
         ;
     }
 
