@@ -13,7 +13,7 @@ import { Observable } from 'rxjs/Rx';
 export class GridsSampleComponent {
     title="Grid:";
     colorNonResizable = 'lightgray';
-    gridItems: Observable<any>;
+    gridItems: any[];
     gridSettings: Observable<any>;
     /**
      *
@@ -21,12 +21,14 @@ export class GridsSampleComponent {
     constructor(private _gridService: GridService) {    }
 
     ngOnInit(): void {
-        console.log("In OnInit");
-        this.gridItems = this._gridService.getGridItems()
-        .catch((err) => {
-            console.log(err);
-            return Observable.of(true); //Make this into an Observable that wraps around true. Just return the error.
-        })
+        console.log("In OnInit - Observable to Array");
+        this._gridService.getGridItems()
+        .subscribe(
+            (items) => this.gridItems = items,
+            (err) => {
+                console.log(err);
+            }
+        )
         ;
         this.gridSettings = this._gridService.getGridItemSettings()
         .catch((err) => {
