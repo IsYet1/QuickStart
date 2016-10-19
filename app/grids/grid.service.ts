@@ -25,6 +25,7 @@ export class GridService {
     }
 
     _handleError(err: any){
+        //Note that err will catch a 404 because the json will be empty.
         console.log(err);
         return Observable.throw(err);
     }

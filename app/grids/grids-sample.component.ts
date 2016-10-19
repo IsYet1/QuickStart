@@ -22,8 +22,18 @@ export class GridsSampleComponent {
 
     ngOnInit(): void {
         console.log("In OnInit");
-        this.gridItems = this._gridService.getGridItems();
-        this.gridSettings = this._gridService.getGridItemSettings();
+        this.gridItems = this._gridService.getGridItems()
+        .catch((err) => {
+            console.log(err);
+            return Observable.of(true); //Make this into an Observable that wraps around true. Just return the error.
+        })
+        ;
+        this.gridSettings = this._gridService.getGridItemSettings()
+        .catch((err) => {
+            console.log(err);
+            return Observable.of(true); //Make this into an Observable that wraps around true. Just return the error.
+        })
+        ;
     }
 
 }
